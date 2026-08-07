@@ -1,8 +1,8 @@
 export default function Home() {
-  return (
-      <main>
-        <h1>LOCAL ENVIRONMENT</h1>
-        <p>Furniture restoration project</p>
-      </main>
-  );
+    return (
+        <main>
+            <h1>DEVELOPMENT TEST</h1>
+            <p>Furniture restoration project</p>
+        </main>
+    );
 }
