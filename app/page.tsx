@@ -11,7 +11,7 @@ export default function Home() {
                 fontFamily: "sans-serif",
             }}
         >
-            <h1>This is {appEnv}</h1>
+            <h1>This is {appEnv} after setup Vercel</h1>
         </main>
     );
 }
