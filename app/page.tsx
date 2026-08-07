@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <main>
-            <h1>final header for test dev</h1>
+            <h1>uncheck-feature-build</h1>
             <p>Furniture restoration project</p>
         </main>
     );
