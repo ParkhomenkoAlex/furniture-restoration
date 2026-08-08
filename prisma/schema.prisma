@@ -13,3 +13,27 @@ model Material {
 
   @@map("materials")
 }
+
+enum ToolType {
+  HAND
+  POWER
+  MEASURING
+}
+
+model Tool {
+  id           Int      @id @default(autoincrement())
+  name         String   @db.VarChar(255)
+  description  String?  @db.Text
+  type         ToolType @default(HAND)
+  quantity     Int      @default(0)
+  price        Decimal  @db.Decimal(10, 2)
+  isAvailable  Boolean  @default(true) @map("is_available")
+  rating       Float?
+  weight       Float?
+  serialNumber String?  @unique @db.VarChar(100) @map("serial_number")
+  metadata     Json?
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @default(now()) @updatedAt @map("updated_at")
+
+  @@map("tools")
+}
