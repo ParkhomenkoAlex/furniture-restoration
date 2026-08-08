@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-type Item = {
+type Material = {
     id: number;
     name: string;
 };
@@ -10,7 +10,7 @@ type Item = {
 export default function Home() {
     const appEnv = process.env.NEXT_PUBLIC_APP_ENV;
 
-    const [items, setItems] = useState<Item[]>([]);
+    const [materials, setMaterials] = useState<Material[]>([]);
     const [loading, setLoading] = useState(false);
 
     const messages: Record<string, string> = {
@@ -24,11 +24,11 @@ export default function Home() {
         try {
             setLoading(true);
 
-            const response = await fetch("/api/test-items");
+            const response = await fetch("/api/materials");
 
-            const data: Item[] = await response.json();
+            const data: Material[] = await response.json();
 
-            setItems(data);
+            setMaterials(data);
         } catch (error) {
             console.error(error);
         } finally {
@@ -56,7 +56,7 @@ export default function Home() {
                 {loading ? "Loading..." : "Load items"}
             </button>
 
-            {items.length > 0 && (
+            {materials.length > 0 && (
                 <table
                     style={{
                         borderCollapse: "collapse",
@@ -85,7 +85,7 @@ export default function Home() {
                     </thead>
 
                     <tbody>
-                    {items.map((item) => (
+                    {materials.map((item) => (
                         <tr key={item.id}>
                             <td
                                 style={{
