@@ -7,9 +7,9 @@ datasource db {
   provider = "postgresql"
 }
 
-model TestItem {
+model Material {
   id   Int    @id @default(autoincrement())
   name String @db.VarChar(255)
 
-  @@map("test_items")
+  @@map("materials")
 }
