@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-geist);
+  --font-serif: var(--font-cormorant);
+
+  --color-background: #f4f2ed;
+  --color-foreground: #171714;
+
+  --color-surface: #ebe8e0;
+  --color-surface-muted: #dfdcd3;
+
+  --color-border: #c9c5bc;
+
+  --color-muted: #6f6c64;
+  --color-accent: #8a6a4a;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f2ed;
+  --foreground: #171714;
+  --surface: #ebe8e0;
+  --surface-muted: #dfdcd3;
+  --border: #c9c5bc;
+  --muted: #6f6c64;
+  --accent: #8a6a4a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist), sans-serif;
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
 }
