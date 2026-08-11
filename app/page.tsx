@@ -1,6 +1,6 @@
-import {Header} from "@/app/components/landing/Header";
-import {Hero} from "@/app/components/landing/Hero";
-import {Services} from "@/app/components/landing/Services";
+import { Header } from "./components/landing/Header";
+import { Hero } from "./components/landing/Hero";
+import { Services } from "./components/landing/Services";
 
 export default function HomePage() {
     return (

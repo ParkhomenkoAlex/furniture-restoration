@@ -4,37 +4,35 @@ import { Cormorant_Garamond, Geist } from "next/font/google";
 import "./globals.css";
 
 const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
+    variable: "--font-geist",
+    subsets: ["latin"],
 });
 
 const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
+    variable: "--font-cormorant",
+    subsets: ["latin"],
+    weight: ["400", "500", "600"],
+    style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Furniture Restoration Studio",
-    template: "%s — Furniture Restoration Studio",
-  },
-  description:
-      "Professional furniture restoration with respect for original materials, craftsmanship, and character.",
+    title: {
+        default: "Furniture Restoration Studio",
+        template: "%s — Furniture Restoration Studio",
+    },
+    description:
+        "Professional furniture restoration with respect for original materials, craftsmanship, and character.",
 };
 
 export default function RootLayout({
-                                     children,
+                                       children,
                                    }: LayoutProps<"/">) {
-  return (
-      <html
-          lang="en"
-          className={`${geist.variable} ${cormorant.variable} h-full antialiased`}
-      >
-      <body className="min-h-full bg-[#f4f2ed] text-neutral-950">
-      {children}
-      </body>
-      </html>
-  );
+    return (
+        <html
+            lang="en"
+            className={`${geist.variable} ${cormorant.variable} h-full antialiased`}
+        >
+        <body>{children}</body>
+        </html>
+    );
 }

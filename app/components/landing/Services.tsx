@@ -1,120 +1,72 @@
-const services = [
-    {
-        number: "01",
-        title: "Furniture Restoration",
-        description:
-            "Careful restoration that brings worn furniture back to life while preserving its original character.",
-    },
-    {
-        number: "02",
-        title: "Wood Repair",
-        description:
-            "Structural repairs, refinishing, and detailed woodwork carried out with respect for the original piece.",
-    },
-    {
-        number: "03",
-        title: "Upholstery",
-        description:
-            "Thoughtful upholstery work using carefully selected fabrics, materials, and traditional techniques.",
-    },
-    {
-        number: "04",
-        title: "Furniture Conservation",
-        description:
-            "Sensitive conservation for valuable and historic pieces where preserving authenticity matters most.",
-    },
-    {
-        number: "03",
-        title: "Upholstery",
-        description:
-            "Thoughtful upholstery work using carefully selected fabrics, materials, and traditional techniques.",
-    },
-    {
-        number: "04",
-        title: "Furniture Conservation",
-        description:
-            "Sensitive conservation for valuable and historic pieces where preserving authenticity matters most.",
-    },
-];
+"use client";
+
+import { useState } from "react";
+
+import { services } from "@/app/data/services";
+import type { Service } from "@/app/types/Service";
+import { ServiceCard } from "./ServiceCard";
+import { ServiceModal } from "./ServiceModal";
 
 export function Services() {
+    const [selectedService, setSelectedService] = useState<Service | null>(null);
+
+    const closeModal = () => {
+        setSelectedService(null);
+    };
+
     return (
-        <section
-            id="services"
-            className="scroll-mt-20 border-t border-neutral-200 bg-[#f4f2ed]"
-        >
-            <div className="mx-auto max-w-[1600px] px-5 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-32">
-                {/* Header */}
-                <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
-                    <div className="flex items-start gap-3">
-                        <span className="mt-2 h-px w-8 bg-neutral-950" />
+        <>
+            <section
+                id="services"
+                className="scroll-mt-20 border-t border-neutral-200 bg-[#f4f2ed]"
+            >
+                <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
+                    {/* Section intro */}
+                    <div className="max-w-[720px]">
+                        <div className="flex items-center gap-4">
+                            <span className="h-px w-8 bg-neutral-400" />
 
-                        <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-neutral-600">
-                            Services
-                        </span>
-                    </div>
+                            <span className="text-[10px] font-medium uppercase tracking-[0.24em] text-neutral-500">
+                                Services
+                            </span>
+                        </div>
 
-                    <div>
-                        <h2 className="max-w-[850px] text-[clamp(3rem,6vw,6.5rem)] font-medium leading-[0.9] tracking-[-0.05em] text-neutral-950">
-                            Restoration with{" "}
+                        <h2 className="mt-6 text-5xl font-medium leading-[0.92] tracking-[-0.045em] text-neutral-950 sm:text-6xl lg:text-7xl">
+                            Crafted to
+                            <br />
                             <span className="font-serif italic">
-                                intention.
+                                last.
                             </span>
                         </h2>
 
-                        <p className="mt-8 max-w-[560px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
-                            From careful repairs to complete restoration, we
-                            bring character and beauty back to furniture worth
-                            preserving.
+                        <p className="mt-7 max-w-[560px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
+                            From careful repairs to complete restoration,
+                            every piece receives the attention its history
+                            deserves.
+                        </p>
+
+                        <p className="mt-6 text-xs uppercase tracking-[0.16em] text-neutral-400">
+                            Click a service to explore
                         </p>
                     </div>
-                </div>
 
-                {/* Services */}
-                <div className="mt-20 border-t border-neutral-300 lg:mt-28">
-                    <div className="grid lg:grid-cols-2">
+                    {/* Services grid */}
+                    <div className="mt-16 grid grid-cols-1 lg:mt-24 lg:grid-cols-2">
                         {services.map((service) => (
-                            <article
-                                key={service.number}
-                                className="group relative border-b border-neutral-300 py-8 transition-colors duration-500 lg:min-h-[300px] lg:px-8 lg:py-10 lg:odd:border-r"
-                            >
-                                <div className="flex h-full flex-col justify-between">
-                                    <div className="flex items-start justify-between">
-                                        <span className="text-[11px] font-medium tracking-[0.18em] text-neutral-400">
-                                            {service.number}
-                                        </span>
-
-                                        <span className="text-xl text-neutral-400 transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-neutral-950">
-                                            ↗
-                                        </span>
-                                    </div>
-
-                                    <div className="mt-16 max-w-[460px]">
-                                        <h3 className="text-2xl font-medium tracking-[-0.025em] text-neutral-950 transition-transform duration-500 group-hover:translate-x-2 sm:text-3xl">
-                                            {service.title}
-                                        </h3>
-
-                                        <p className="mt-4 max-w-[420px] text-sm leading-6 text-neutral-500 transition-colors duration-500 group-hover:text-neutral-700 sm:text-base sm:leading-7">
-                                            {service.description}
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-neutral-950 transition-transform duration-700 group-hover:scale-x-100" />
-                            </article>
+                            <ServiceCard
+                                key={service.id}
+                                service={service}
+                                onSelect={setSelectedService}
+                            />
                         ))}
                     </div>
                 </div>
+            </section>
 
-                {/* Bottom information */}
-                <div className="mt-8 flex flex-col gap-3 text-[10px] uppercase tracking-[0.22em] text-neutral-400 sm:flex-row sm:items-center sm:justify-between">
-                    <span>Crafted by hand</span>
-
-                    <span>Every piece is different</span>
-
-                    <span>Made to last</span>
-                </div>
-            </div>
-        </section>
+            <ServiceModal
+                service={selectedService}
+                onClose={closeModal}
+            />
+        </>
     );
 }
