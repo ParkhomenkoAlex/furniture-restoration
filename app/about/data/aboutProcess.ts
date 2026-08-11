@@ -1,4 +1,6 @@
-export const aboutProcess = [
+import {AboutItem} from "@/app/types/AboutItem";
+
+export const aboutProcess: AboutItem[] = [
     {
         id: "inspection",
         number: "01",
