@@ -10,7 +10,7 @@ import {aboutFurnitureTypes} from "@/app/about/data/aboutFurnitureTypes";
 export default function AboutPage() {
     return (
         <main className="bg-[#f4f2ed] text-neutral-950">
-            {/* 01. Hero */}
+            {/* 01. HeroSection */}
             <section className="border-b border-neutral-200">
                 <div className="mx-auto grid max-w-[1440px] items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 lg:px-12 lg:py-28">
                     <div>

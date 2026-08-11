@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function Hero() {
+export function HeroSection() {
     return (
         <section className="relative overflow-hidden">
             {/* Content */}

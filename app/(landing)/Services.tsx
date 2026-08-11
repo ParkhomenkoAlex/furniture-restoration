@@ -5,7 +5,7 @@ import { useState } from "react";
 import { services } from "@/app/data/services";
 import type { Service } from "@/app/types/Service";
 import { ServiceCard } from "./ServiceCard";
-import { ServiceModal } from "./ServiceModal";
+import { ServiceModal } from "../components/modals/ServiceModal";
 
 export function Services() {
     const [selectedService, setSelectedService] = useState<Service | null>(null);

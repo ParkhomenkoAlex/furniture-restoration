@@ -1,19 +1,16 @@
-import { Header } from "./components/landing/Header";
-import { Hero } from "./components/landing/Hero";
-import { Services } from "./components/landing/Services";
-import {HowItWorks} from "@/app/components/landing/HowItWorks";
-import {About} from "@/app/components/landing/About";
+import { HeroSection } from "./(landing)/HeroSection";
+import { Services } from "./(landing)/Services";
+import {HowItWorksSection} from "@/app/(landing)/HowItWorksSection";
+import {AboutSection} from "@/app/(landing)/AboutSection";
 
 export default function HomePage() {
     return (
         <>
-            <Header />
-
             <main>
-                <Hero />
+                <HeroSection />
                 <Services />
-                <HowItWorks />
-                <About />
+                <HowItWorksSection />
+                <AboutSection />
             </main>
         </>
     );
