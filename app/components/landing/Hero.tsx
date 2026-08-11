@@ -55,7 +55,7 @@ export function Hero() {
                 <div className="hero-image-in relative ml-auto w-full max-w-[760px]">
                     <div className="relative aspect-[4/5] overflow-hidden bg-neutral-200 sm:aspect-[5/6] lg:aspect-[4/5]">
                         <Image
-                            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=85"
+                            src="https://images.unsplash.com/photo-1667983780697-7d5aa9bfa0d0?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Beautifully restored vintage furniture"
                             fill
                             priority
