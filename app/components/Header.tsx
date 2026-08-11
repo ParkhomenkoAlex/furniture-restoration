@@ -5,7 +5,7 @@ import {useState} from "react";
 
 import {useLockBodyScroll} from "@/app/hooks/useLockBodyScroll";
 import {Logo} from "./Logo";
-import {Navigation} from "./Navigation";
+import {Navigation} from "./navigation/Navigation";
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ export function Header() {
     };
 
     return (
-        <header className="relative z-50 border-b border-border bg-background">
+        <header className="sticky top-0 z-50 border-b border-border bg-background">
             <div className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-6 lg:px-10">
                 <Logo onClick={closeMenu}/>
 

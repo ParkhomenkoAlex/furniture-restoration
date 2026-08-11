@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import {NavigationItem} from "@/app/types/NavigationItem";
+import type { NavigationItem } from "@/app/types/NavigationItem";
 
 type NavigationLinkProps = {
     item: NavigationItem;
@@ -15,18 +15,6 @@ export function NavigationLink({
                                    onClick,
                                    className,
                                }: NavigationLinkProps) {
-    if (item.href.startsWith("#")) {
-        return (
-            <a
-                href={item.href}
-                onClick={onClick}
-                className={className}
-            >
-                {children}
-            </a>
-        );
-    }
-
     return (
         <Link
             href={item.href}

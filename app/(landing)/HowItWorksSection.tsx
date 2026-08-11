@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { howItWorksSteps } from "@/app/data/howItWorksSteps";
 
-export function HowItWorks() {
+export function HowItWorksSection() {
     return (
         <section
             id="how-it-works"

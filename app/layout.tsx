@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Geist } from "next/font/google";
 
+import { Header } from "./components/Header";
+
 import "./globals.css";
+import { ScrollToTop } from "@/app/components/navigation/ScrollToTop";
 
 const geist = Geist({
     variable: "--font-geist",
@@ -24,15 +27,17 @@ export const metadata: Metadata = {
         "Professional furniture restoration with respect for original materials, craftsmanship, and character.",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: LayoutProps<"/">) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <html
             lang="en"
             className={`${geist.variable} ${cormorant.variable} h-full antialiased`}
         >
-        <body>{children}</body>
+        <body>
+        <ScrollToTop />
+        <Header />
+        {children}
+        </body>
         </html>
     );
 }

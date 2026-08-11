@@ -1,24 +1,6 @@
-import { NavigationLink } from "./NavigationLink";
-import {NavigationItem} from "@/app/types/NavigationItem";
+import { navigationItems } from "@/app/data/navigationItems";
 
-const navigationItems: NavigationItem[] = [
-    {
-        label: "Services",
-        href: "#services",
-    },
-    {
-        label: "Portfolio",
-        href: "/portfolio",
-    },
-    {
-        label: "How it works",
-        href: "#how-it-works",
-    },
-    {
-        label: "About",
-        href: "#about",
-    },
-];
+import { NavigationLink } from "./NavigationLink";
 
 type NavigationProps = {
     mobile?: boolean;
