@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { howItWorksSteps } from "@/app/data/howItWorksSteps";
 
 export function HowItWorks() {
@@ -35,34 +37,38 @@ export function HowItWorks() {
 
                     {/* Steps */}
                     <div>
-                        {howItWorksSteps.map((step, index) => (
+                        {howItWorksSteps.map((step) => (
                             <div
                                 key={step.number}
-                                className={`group relative py-8 sm:py-10 ${
-                                    index === 0
-                                        ? "border-t border-neutral-300"
-                                        : "border-t border-neutral-300"
-                                }`}
+                                className="border-t border-neutral-300 py-8 sm:py-10"
                             >
-                                <div className="grid gap-6 sm:grid-cols-[56px_1fr] sm:gap-8">
-                                    <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-neutral-400 transition-colors duration-300 group-hover:text-neutral-700">
-                                        {step.number}
-                                    </span>
-
+                                <div className="grid gap-8 sm:grid-cols-[1fr_220px] sm:items-center lg:grid-cols-[1fr_280px]">
                                     <div>
-                                        <div className="flex items-start justify-between gap-6">
-                                            <h3 className="max-w-[560px] text-2xl font-medium leading-[1.05] tracking-[-0.03em] text-neutral-950 transition-transform duration-300 group-hover:translate-x-1 sm:text-3xl lg:text-4xl">
-                                                {step.title}
-                                            </h3>
-
-                                            <span className="hidden shrink-0 text-xl text-neutral-300 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-neutral-950 sm:block">
-                                                ↗
+                                        <div className="flex items-start gap-4">
+                                            <span className="shrink-0 text-[10px] font-medium uppercase tracking-[0.2em] text-neutral-400">
+                                                {step.number}
                                             </span>
-                                        </div>
 
-                                        <p className="mt-4 max-w-[500px] text-sm leading-6 text-neutral-500 transition-colors duration-300 group-hover:text-neutral-700 sm:text-base sm:leading-7">
-                                            {step.description}
-                                        </p>
+                                            <div>
+                                                <h3 className="max-w-[560px] text-2xl font-medium leading-[1.05] tracking-[-0.03em] text-neutral-950 sm:text-3xl lg:text-4xl">
+                                                    {step.title}
+                                                </h3>
+
+                                                <p className="mt-4 max-w-[500px] text-sm leading-6 text-neutral-500 sm:text-base sm:leading-7">
+                                                    {step.description}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-200">
+                                        <Image
+                                            src={step.image}
+                                            alt={step.imageAlt}
+                                            fill
+                                            sizes="(max-width: 640px) 100vw, 280px"
+                                            className="object-cover"
+                                        />
                                     </div>
                                 </div>
                             </div>
