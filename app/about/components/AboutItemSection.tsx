@@ -1,6 +1,6 @@
 import Image from "next/image";
+import {AboutItem} from "@/app/types/AboutItem";
 
-import type { AboutItem } from "../types/about";
 
 interface AboutItemSectionProps {
     eyebrow: string;
