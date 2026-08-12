@@ -11,7 +11,8 @@
         "format:check": "prettier --check .",
         "typecheck": "tsc --noEmit",
         "check": "npm run lint && npm run typecheck && npm run format:check",
-        "prepare": "husky"
+        "prepare": "husky",
+        "postinstall": "prisma generate"
     },
     "dependencies": {
         "@prisma/adapter-pg": "^7.9.1",
