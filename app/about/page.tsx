@@ -2,10 +2,10 @@ import Image from "next/image";
 
 import AboutItemSection from "./components/AboutItemSection";
 import AboutFurnitureGrid from "./components/AboutFurnitureGrid";
-import {aboutBeliefs} from "@/app/about/data/aboutBeliefs";
-import {aboutMaterials} from "@/app/about/data/aboutMaterials";
-import {aboutProcess} from "@/app/about/data/aboutProcess";
-import {aboutFurnitureTypes} from "@/app/about/data/aboutFurnitureTypes";
+import { aboutBeliefs } from "@/app/about/data/aboutBeliefs";
+import { aboutMaterials } from "@/app/about/data/aboutMaterials";
+import { aboutProcess } from "@/app/about/data/aboutProcess";
+import { aboutFurnitureTypes } from "@/app/about/data/aboutFurnitureTypes";
 
 export default function AboutPage() {
     return (
@@ -25,16 +25,14 @@ export default function AboutPage() {
                         <h1 className="mt-6 max-w-[650px] text-6xl font-medium leading-[0.88] tracking-[-0.055em] sm:text-7xl lg:text-[6.5rem]">
                             Furniture <br />
                             with a <br />
-                            <span className="font-serif italic">
-                                memory.
-                            </span>
+                            <span className="font-serif italic">memory.</span>
                         </h1>
 
                         <p className="mt-8 max-w-[500px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
-                            We believe furniture can carry something that
-                            cannot be replaced — the marks of time, the work of
-                            the hands that made it, and the memories of the
-                            people who lived with it.
+                            We believe furniture can carry something that cannot
+                            be replaced — the marks of time, the work of the
+                            hands that made it, and the memories of the people
+                            who lived with it.
                         </p>
                     </div>
 

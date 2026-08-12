@@ -9,10 +9,7 @@ type ServiceCardProps = {
     onSelect: (service: Service) => void;
 };
 
-export function ServiceCard({
-                                service,
-                                onSelect,
-                            }: ServiceCardProps) {
+export function ServiceCard({ service, onSelect }: ServiceCardProps) {
     return (
         <button
             type="button"

@@ -1,46 +1,58 @@
-import {AboutItem} from "@/app/types/AboutItem";
+import { AboutItem } from "@/app/types/AboutItem";
 
 export const aboutFurnitureTypes: AboutItem[] = [
     {
         id: "chairs",
         number: "01",
         title: "Chairs",
-        description: "Dining chairs, lounge chairs, armchairs, and traditional seating with structural or upholstery needs.",
+        description:
+            "Dining chairs, lounge chairs, armchairs, and traditional seating with structural or upholstery needs.",
         image: "https://images.unsplash.com/photo-1510568192-5cd6e7a47edd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         imageAlt: "Restored wooden chair",
-    }, {
+    },
+    {
         id: "tables",
         number: "02",
         title: "Tables",
-        description: "Dining tables, occasional tables, desks, and other wooden surfaces affected by wear, damage, or age.",
+        description:
+            "Dining tables, occasional tables, desks, and other wooden surfaces affected by wear, damage, or age.",
         image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Vintage wooden table",
-    }, {
+    },
+    {
         id: "cabinets",
         number: "03",
         title: "Cabinets",
-        description: "Storage pieces, sideboards, cupboards, and cabinets where structure, hardware, and finishes all matter.",
+        description:
+            "Storage pieces, sideboards, cupboards, and cabinets where structure, hardware, and finishes all matter.",
         image: "https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Vintage wooden cabinet",
-    }, {
+    },
+    {
         id: "mid-century",
         number: "04",
         title: "Mid-century furniture",
-        description: "Pieces from the mid-century period where original materials, finishes, proportions, and details deserve particular attention.",
+        description:
+            "Pieces from the mid-century period where original materials, finishes, proportions, and details deserve particular attention.",
         image: "https://images.unsplash.com/photo-1631510083755-11ecb5172d81?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1hfHx8fA%3D%3D",
         imageAlt: "Mid-century furniture",
-    }, {
+    },
+    {
         id: "antique-pieces",
         number: "05",
         title: "Antique pieces",
-        description: "Older furniture requiring a measured approach to materials, construction, previous repairs, and preservation.",
+        description:
+            "Older furniture requiring a measured approach to materials, construction, previous repairs, and preservation.",
         image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Antique furniture",
-    }, {
+    },
+    {
         id: "upholstered-furniture",
         number: "06",
         title: "Upholstered furniture",
-        description: "Sofas, benches, stools, and upholstered chairs where comfort, structure, fabric, and original proportions all need to work together.",
+        description:
+            "Sofas, benches, stools, and upholstered chairs where comfort, structure, fabric, and original proportions all need to work together.",
         image: "https://images.unsplash.com/photo-1550226891-ef816aed4a98?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Upholstered furniture",
-    },];
+    },
+];

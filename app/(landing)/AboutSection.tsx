@@ -21,22 +21,20 @@ export function AboutSection() {
                         <h2 className="mt-6 max-w-[560px] text-5xl font-medium leading-[0.92] tracking-[-0.045em] text-neutral-950 sm:text-6xl lg:text-7xl">
                             Furniture has a
                             <br />
-                            <span className="font-serif italic">
-                                history.
-                            </span>
+                            <span className="font-serif italic">history.</span>
                         </h2>
 
                         <p className="mt-7 max-w-[520px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
-                            We believe good furniture deserves more than a
-                            quick replacement. Our work is about preserving
-                            the materials, details, and character that make
-                            each piece worth keeping.
+                            We believe good furniture deserves more than a quick
+                            replacement. Our work is about preserving the
+                            materials, details, and character that make each
+                            piece worth keeping.
                         </p>
 
                         <p className="mt-5 max-w-[520px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
                             Every restoration is approached individually,
-                            combining traditional craftsmanship with a
-                            careful understanding of the piece's history.
+                            combining traditional craftsmanship with a careful
+                            understanding of the piece's history.
                         </p>
 
                         <Link

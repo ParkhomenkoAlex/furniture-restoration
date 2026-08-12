@@ -7,10 +7,7 @@ type NavigationProps = {
     onNavigate?: () => void;
 };
 
-export function Navigation({
-                               mobile = false,
-                               onNavigate,
-                           }: NavigationProps) {
+export function Navigation({ mobile = false, onNavigate }: NavigationProps) {
     if (mobile) {
         return (
             <nav>

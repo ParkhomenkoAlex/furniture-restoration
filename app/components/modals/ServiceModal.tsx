@@ -11,11 +11,12 @@ type ServiceModalProps = {
     onClose: () => void;
 };
 
-export function ServiceModal({
-                                 service,
-                                 onClose,
-                             }: ServiceModalProps) {
+export function ServiceModal({ service, onClose }: ServiceModalProps) {
     const [isVisible, setIsVisible] = useState(false);
+
+    const handleClose = () => {
+        setIsVisible(false);
+    };
 
     useEffect(() => {
         if (!service) {
@@ -44,17 +45,8 @@ export function ServiceModal({
         };
     }, [service, onClose]);
 
-    const handleClose = () => {
-        setIsVisible(false);
-    };
-
-    const handleTransitionEnd = (
-        event: TransitionEvent<HTMLDivElement>,
-    ) => {
-        if (
-            !isVisible &&
-            event.propertyName === "opacity"
-        ) {
+    const handleTransitionEnd = (event: TransitionEvent<HTMLDivElement>) => {
+        if (!isVisible && event.propertyName === "opacity") {
             onClose();
         }
     };
@@ -66,9 +58,7 @@ export function ServiceModal({
     return (
         <div
             className={`fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 lg:p-10 ${
-                isVisible
-                    ? "bg-neutral-950/50"
-                    : "bg-neutral-950/0"
+                isVisible ? "bg-neutral-950/50" : "bg-neutral-950/0"
             } backdrop-blur-sm transition-colors duration-300 ease-out`}
             role="presentation"
             onMouseDown={(event) => {
@@ -141,16 +131,14 @@ export function ServiceModal({
                                 </h3>
 
                                 <ul className="mt-4 space-y-2">
-                                    {service.suitableFor.map(
-                                        (item) => (
-                                            <li
-                                                key={item}
-                                                className="text-sm text-neutral-700"
-                                            >
-                                                {item}
-                                            </li>
-                                        ),
-                                    )}
+                                    {service.suitableFor.map((item) => (
+                                        <li
+                                            key={item}
+                                            className="text-sm text-neutral-700"
+                                        >
+                                            {item}
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
 
@@ -160,16 +148,14 @@ export function ServiceModal({
                                 </h3>
 
                                 <ul className="mt-4 space-y-2">
-                                    {service.materials.map(
-                                        (item) => (
-                                            <li
-                                                key={item}
-                                                className="text-sm text-neutral-700"
-                                            >
-                                                {item}
-                                            </li>
-                                        ),
-                                    )}
+                                    {service.materials.map((item) => (
+                                        <li
+                                            key={item}
+                                            className="text-sm text-neutral-700"
+                                        >
+                                            {item}
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
@@ -180,27 +166,20 @@ export function ServiceModal({
                             </h3>
 
                             <div className="mt-5 space-y-4">
-                                {service.process.map(
-                                    (step, index) => (
-                                        <div
-                                            key={step}
-                                            className="flex items-center gap-4"
-                                        >
-                                            <span className="flex h-7 w-7 shrink-0 items-center justify-center border border-neutral-300 text-[10px] text-neutral-500">
-                                                {String(
-                                                    index + 1,
-                                                ).padStart(
-                                                    2,
-                                                    "0",
-                                                )}
-                                            </span>
+                                {service.process.map((step, index) => (
+                                    <div
+                                        key={step}
+                                        className="flex items-center gap-4"
+                                    >
+                                        <span className="flex h-7 w-7 shrink-0 items-center justify-center border border-neutral-300 text-[10px] text-neutral-500">
+                                            {String(index + 1).padStart(2, "0")}
+                                        </span>
 
-                                            <span className="text-sm text-neutral-700">
-                                                {step}
-                                            </span>
-                                        </div>
-                                    ),
-                                )}
+                                        <span className="text-sm text-neutral-700">
+                                            {step}
+                                        </span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
 
@@ -210,9 +189,7 @@ export function ServiceModal({
                                 onClick={handleClose}
                                 className="group inline-flex w-full cursor-pointer items-center justify-between bg-neutral-950 px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-neutral-800"
                             >
-                                <span>
-                                    Start a restoration
-                                </span>
+                                <span>Start a restoration</span>
 
                                 <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
                                     ↗

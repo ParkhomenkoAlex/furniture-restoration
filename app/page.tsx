@@ -1,7 +1,7 @@
 import { HeroSection } from "./(landing)/HeroSection";
 import { Services } from "./(landing)/Services";
-import {HowItWorksSection} from "@/app/(landing)/HowItWorksSection";
-import {AboutSection} from "@/app/(landing)/AboutSection";
+import { HowItWorksSection } from "@/app/(landing)/HowItWorksSection";
+import { AboutSection } from "@/app/(landing)/AboutSection";
 
 export default function HomePage() {
     return (

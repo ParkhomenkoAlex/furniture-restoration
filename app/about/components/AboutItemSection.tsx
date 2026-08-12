@@ -1,6 +1,5 @@
 import Image from "next/image";
-import {AboutItem} from "@/app/types/AboutItem";
-
+import { AboutItem } from "@/app/types/AboutItem";
 
 interface AboutItemSectionProps {
     eyebrow: string;
@@ -11,19 +10,15 @@ interface AboutItemSectionProps {
 }
 
 export default function AboutItemSection({
-                                             eyebrow,
-                                             titleLines,
-                                             italicTitle,
-                                             items,
-                                             bordered = false,
-                                         }: AboutItemSectionProps) {
+    eyebrow,
+    titleLines,
+    italicTitle,
+    items,
+    bordered = false,
+}: AboutItemSectionProps) {
     return (
         <section
-            className={
-                bordered
-                    ? "border-y border-neutral-200 bg-white"
-                    : ""
-            }
+            className={bordered ? "border-y border-neutral-200 bg-white" : ""}
         >
             <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
                 <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
