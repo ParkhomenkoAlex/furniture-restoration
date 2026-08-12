@@ -6,9 +6,9 @@ The project is built with **Next.js, React, TypeScript, PostgreSQL and Prisma**.
 
 The project uses three completely separate databases:
 
-* **Local** — PostgreSQL running in Docker
-* **Dev** — PostgreSQL hosted in Neon
-* **Prod** — PostgreSQL hosted in Neon
+- **Local** — PostgreSQL running in Docker
+- **Dev** — PostgreSQL hosted in Neon
+- **Prod** — PostgreSQL hosted in Neon
 
 Database schema changes are managed through **Prisma Migrations**.
 
@@ -16,30 +16,30 @@ Database schema changes are managed through **Prisma Migrations**.
 
 # Table of Contents
 
-* [Architecture](#architecture)
-* [Technology Stack](#technology-stack)
-* [Environments](#environments)
-* [Database Architecture](#database-architecture)
-* [Git / GitHub / Vercel Flow](#git--github--vercel-flow)
-* [Project Structure](#project-structure)
-* [Environment Variables](#environment-variables)
-* [Local Development](#local-development)
-* [Selecting a Database Locally](#selecting-a-database-locally)
-* [Prisma](#prisma)
-* [Creating a Migration](#creating-a-migration)
-* [How Migrations Work](#how-migrations-work)
-* [Deploying Migrations](#deploying-migrations)
-* [Database Data vs Database Schema](#database-data-vs-database-schema)
-* [Working with Neon](#working-with-neon)
-* [Working with Local Docker Database](#working-with-local-docker-database)
-* [Testing Different Databases Locally](#testing-different-databases-locally)
-* [Prisma Client](#prisma-client)
-* [API Routes](#api-routes)
-* [Git Workflow](#git-workflow)
-* [Development Workflow](#development-workflow)
-* [Important Rules](#important-rules)
-* [Troubleshooting](#troubleshooting)
-* [Useful Commands](#useful-commands)
+- [Architecture](#architecture)
+- [Technology Stack](#technology-stack)
+- [Environments](#environments)
+- [Database Architecture](#database-architecture)
+- [Git / GitHub / Vercel Flow](#git--github--vercel-flow)
+- [Project Structure](#project-structure)
+- [Environment Variables](#environment-variables)
+- [Local Development](#local-development)
+- [Selecting a Database Locally](#selecting-a-database-locally)
+- [Prisma](#prisma)
+- [Creating a Migration](#creating-a-migration)
+- [How Migrations Work](#how-migrations-work)
+- [Deploying Migrations](#deploying-migrations)
+- [Database Data vs Database Schema](#database-data-vs-database-schema)
+- [Working with Neon](#working-with-neon)
+- [Working with Local Docker Database](#working-with-local-docker-database)
+- [Testing Different Databases Locally](#testing-different-databases-locally)
+- [Prisma Client](#prisma-client)
+- [API Routes](#api-routes)
+- [Git Workflow](#git-workflow)
+- [Development Workflow](#development-workflow)
+- [Important Rules](#important-rules)
+- [Troubleshooting](#troubleshooting)
+- [Useful Commands](#useful-commands)
 
 ---
 
@@ -102,16 +102,16 @@ The application does not need to know how the database was selected.
 
 # Technology Stack
 
-* Next.js
-* React
-* TypeScript
-* PostgreSQL
-* Prisma ORM
-* Prisma Migrations
-* Neon PostgreSQL
-* Docker
-* Vercel
-* GitHub
+- Next.js
+- React
+- TypeScript
+- PostgreSQL
+- Prisma ORM
+- Prisma Migrations
+- Neon PostgreSQL
+- Docker
+- Vercel
+- GitHub
 
 Important packages include:
 
@@ -403,22 +403,22 @@ import "dotenv/config";
 import { defineConfig } from "prisma/config";
 
 export default defineConfig({
-  schema: "prisma/schema.prisma",
+    schema: "prisma/schema.prisma",
 
-  migrations: {
-    path: "prisma/migrations",
-  },
+    migrations: {
+        path: "prisma/migrations",
+    },
 
-  datasource: {
-    url: process.env["DATABASE_URL"],
-  },
+    datasource: {
+        url: process.env["DATABASE_URL"],
+    },
 });
 ```
 
 The important part is:
 
 ```ts
-url: process.env["DATABASE_URL"]
+url: process.env["DATABASE_URL"];
 ```
 
 Prisma always works with the environment variable:
@@ -436,7 +436,7 @@ Creates the Prisma client used by the application.
 The important concept is:
 
 ```ts
-process.env.DATABASE_URL
+process.env.DATABASE_URL;
 ```
 
 The application does not care whether this URL points to:
@@ -697,7 +697,7 @@ model Material {
   id          Int    @id @default(autoincrement())
   name        String @db.VarChar(255)
   description String?
-  
+
   @@map("materials")
 }
 ```
@@ -1196,9 +1196,9 @@ can query Prisma:
 
 ```ts
 const materials = await prisma.material.findMany({
-  orderBy: {
-    id: "asc",
-  },
+    orderBy: {
+        id: "asc",
+    },
 });
 ```
 
