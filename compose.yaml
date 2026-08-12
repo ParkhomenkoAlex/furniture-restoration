@@ -1,21 +1,21 @@
 services:
-  postgres:
-    image: postgres:17
+    postgres:
+        image: postgres:17
 
-    container_name: furniture-restoration-postgres
+        container_name: furniture-restoration-postgres
 
-    restart: unless-stopped
+        restart: unless-stopped
 
-    environment:
-      POSTGRES_DB: furniture_restoration_local
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+        environment:
+            POSTGRES_DB: furniture_restoration_local
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
 
-    ports:
-      - "5432:5432"
+        ports:
+            - "5432:5432"
 
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+    postgres_data:

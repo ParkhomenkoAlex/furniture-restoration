@@ -20,7 +20,9 @@ export function HeroSection() {
                         <br />
                         furniture
                         <br />
-                        <span className="font-serif italic">a second life.</span>
+                        <span className="font-serif italic">
+                            a second life.
+                        </span>
                     </h1>
 
                     <p className="mt-8 max-w-[480px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">

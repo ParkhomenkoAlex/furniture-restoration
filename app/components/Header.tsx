@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import {useState} from "react";
+import { useState } from "react";
 
-import {useLockBodyScroll} from "@/app/hooks/useLockBodyScroll";
-import {Logo} from "./Logo";
-import {Navigation} from "./navigation/Navigation";
+import { useLockBodyScroll } from "@/app/hooks/useLockBodyScroll";
+import { Logo } from "./Logo";
+import { Navigation } from "./navigation/Navigation";
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,10 +19,10 @@ export function Header() {
     return (
         <header className="sticky top-0 z-50 border-b border-border bg-background">
             <div className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-6 lg:px-10">
-                <Logo onClick={closeMenu}/>
+                <Logo onClick={closeMenu} />
 
                 <div className="hidden lg:block">
-                    <Navigation/>
+                    <Navigation />
                 </div>
 
                 <Link
@@ -53,7 +53,7 @@ export function Header() {
                 }`}
             >
                 <div className="px-6 py-8">
-                    <Navigation mobile onNavigate={closeMenu}/>
+                    <Navigation mobile onNavigate={closeMenu} />
 
                     <Link
                         href="/request"

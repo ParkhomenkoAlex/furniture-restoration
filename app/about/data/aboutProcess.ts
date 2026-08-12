@@ -1,4 +1,4 @@
-import {AboutItem} from "@/app/types/AboutItem";
+import { AboutItem } from "@/app/types/AboutItem";
 
 export const aboutProcess: AboutItem[] = [
     {

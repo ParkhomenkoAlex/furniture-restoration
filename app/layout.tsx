@@ -33,11 +33,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             lang="en"
             className={`${geist.variable} ${cormorant.variable} h-full antialiased`}
         >
-        <body>
-        <ScrollToTop />
-        <Header />
-        {children}
-        </body>
+            <body>
+                <ScrollToTop />
+                <Header />
+                {children}
+            </body>
         </html>
     );
 }

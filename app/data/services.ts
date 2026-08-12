@@ -9,16 +9,9 @@ export const services: Service[] = [
             "Careful restoration that brings worn furniture back to life while preserving its original character.",
         description:
             "We restore furniture with a careful balance between repair and preservation. Our approach focuses on bringing a piece back to a beautiful, functional condition without erasing the marks, materials, and details that give it character.",
-        image:
-            "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=85",
+        image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Beautifully restored vintage furniture",
-        suitableFor: [
-            "Tables",
-            "Chairs",
-            "Cabinets",
-            "Dressers",
-            "Sideboards",
-        ],
+        suitableFor: ["Tables", "Chairs", "Cabinets", "Dressers", "Sideboards"],
         process: [
             "Condition assessment",
             "Structural and surface repair",
@@ -40,8 +33,7 @@ export const services: Service[] = [
             "Structural and cosmetic wood repairs that restore strength, stability, and visual integrity.",
         description:
             "From loose joints and cracks to missing pieces and damaged veneer, we repair wooden furniture with attention to both structure and appearance. Repairs are made to feel like part of the original piece rather than an obvious addition.",
-        image:
-            "https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=1200&q=85",
+        image: "https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Woodworking tools and craftsmanship",
         suitableFor: [
             "Cracks",
@@ -71,8 +63,7 @@ export const services: Service[] = [
             "Thoughtful upholstery work that gives well-loved seating a new life without losing its character.",
         description:
             "We restore and renew upholstered furniture with attention to comfort, proportion, and original design. Depending on the piece, this can include replacing worn materials, rebuilding padding, and selecting a fabric that complements its history.",
-        image:
-            "https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=85",
+        image: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Elegant upholstered furniture",
         suitableFor: [
             "Armchairs",
@@ -102,8 +93,7 @@ export const services: Service[] = [
             "Careful surface restoration that reveals the beauty of the original wood and finish.",
         description:
             "When a finish has become tired, damaged, or unsuitable for the piece, we carefully restore the surface. The goal is not to make old furniture look new, but to reveal and protect the character already present in the material.",
-        image:
-            "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85",
+        image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Warm wooden furniture surface",
         suitableFor: [
             "Tables",
@@ -133,8 +123,7 @@ export const services: Service[] = [
             "Sensitive restoration for antique pieces where history, authenticity, and craftsmanship matter.",
         description:
             "Antique furniture requires a different level of restraint. We work carefully to preserve original materials, construction techniques, patina, and decorative details while addressing damage that affects the piece's condition or usability.",
-        image:
-            "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=85",
+        image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Antique furniture in a refined interior",
         suitableFor: [
             "Antique tables",
@@ -164,8 +153,7 @@ export const services: Service[] = [
             "Minimal-intervention care focused on preserving the original materials, history, and integrity of a piece.",
         description:
             "Conservation is about protecting what remains rather than transforming it. We carefully stabilize and preserve valuable furniture while retaining its original character, patina, construction, and evidence of age.",
-        image:
-            "https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1200&q=85",
+        image: "https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1200&q=85",
         imageAlt: "Historic wooden furniture detail",
         suitableFor: [
             "Historic furniture",

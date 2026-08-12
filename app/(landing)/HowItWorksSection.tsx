@@ -23,15 +23,13 @@ export function HowItWorksSection() {
                         <h2 className="mt-6 max-w-[520px] text-5xl font-medium leading-[0.92] tracking-[-0.045em] text-neutral-950 sm:text-6xl lg:text-7xl">
                             A considered
                             <br />
-                            <span className="font-serif italic">
-                                process.
-                            </span>
+                            <span className="font-serif italic">process.</span>
                         </h2>
 
                         <p className="mt-7 max-w-[440px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
-                            From the first conversation to the finished
-                            piece, every restoration is approached with
-                            patience, care and respect for its history.
+                            From the first conversation to the finished piece,
+                            every restoration is approached with patience, care
+                            and respect for its history.
                         </p>
                     </div>
 

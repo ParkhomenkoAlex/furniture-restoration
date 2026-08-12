@@ -8,7 +8,9 @@ import { ServiceCard } from "./ServiceCard";
 import { ServiceModal } from "../components/modals/ServiceModal";
 
 export function Services() {
-    const [selectedService, setSelectedService] = useState<Service | null>(null);
+    const [selectedService, setSelectedService] = useState<Service | null>(
+        null,
+    );
 
     const closeModal = () => {
         setSelectedService(null);
@@ -34,15 +36,12 @@ export function Services() {
                         <h2 className="mt-6 text-5xl font-medium leading-[0.92] tracking-[-0.045em] text-neutral-950 sm:text-6xl lg:text-7xl">
                             Crafted to
                             <br />
-                            <span className="font-serif italic">
-                                last.
-                            </span>
+                            <span className="font-serif italic">last.</span>
                         </h2>
 
                         <p className="mt-7 max-w-[560px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
-                            From careful repairs to complete restoration,
-                            every piece receives the attention its history
-                            deserves.
+                            From careful repairs to complete restoration, every
+                            piece receives the attention its history deserves.
                         </p>
 
                         <p className="mt-6 text-xs uppercase tracking-[0.16em] text-neutral-400">
@@ -63,10 +62,7 @@ export function Services() {
                 </div>
             </section>
 
-            <ServiceModal
-                service={selectedService}
-                onClose={closeModal}
-            />
+            <ServiceModal service={selectedService} onClose={closeModal} />
         </>
     );
 }

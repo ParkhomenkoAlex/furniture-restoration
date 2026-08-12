@@ -11,12 +11,12 @@ type AboutFurnitureGridProps = {
 };
 
 export default function AboutFurnitureGrid({
-                                               eyebrow,
-                                               titleLines,
-                                               italicTitle,
-                                               description,
-                                               items,
-                                           }: AboutFurnitureGridProps) {
+    eyebrow,
+    titleLines,
+    italicTitle,
+    description,
+    items,
+}: AboutFurnitureGridProps) {
     return (
         <section className="border-y border-neutral-200 bg-white">
             <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
@@ -36,9 +36,7 @@ export default function AboutFurnitureGrid({
                             </span>
                         ))}
 
-                        <span className="font-serif italic">
-                            {italicTitle}
-                        </span>
+                        <span className="font-serif italic">{italicTitle}</span>
                     </h2>
 
                     <p className="mt-7 max-w-[650px] text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">

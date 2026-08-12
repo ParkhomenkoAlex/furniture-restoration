@@ -12,7 +12,6 @@ import { spawn } from "node:child_process";
 // Load variables from .env.local.
 config({ path: ".env.local" });
 
-
 // Ask the developer which database should be used
 // for the current local Next.js session.
 const database = await select({
@@ -33,7 +32,6 @@ const database = await select({
     ],
 });
 
-
 // Get the corresponding database URL.
 //
 // For example:
@@ -42,7 +40,6 @@ const database = await select({
 // PROD  → DATABASE_URL_PROD
 const databaseUrl = process.env[`DATABASE_URL_${database}`];
 
-
 // Stop the application if the selected database
 // does not have a corresponding URL in .env.local.
 if (!databaseUrl) {
@@ -50,12 +47,10 @@ if (!databaseUrl) {
     process.exit(1);
 }
 
-
 // Show the selected database in the terminal.
 // The actual DATABASE_URL is not printed because
 // it contains database credentials.
 console.log(`\nConnected to: ${database}\n`);
-
 
 // Start Next.js development server.
 //
@@ -80,7 +75,6 @@ const nextProcess = spawn(
         },
     },
 );
-
 
 // When Next.js stops, exit this script with the same exit code.
 nextProcess.on("exit", (code) => {

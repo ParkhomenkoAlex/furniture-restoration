@@ -10,17 +10,13 @@ type NavigationLinkProps = {
 };
 
 export function NavigationLink({
-                                   item,
-                                   children,
-                                   onClick,
-                                   className,
-                               }: NavigationLinkProps) {
+    item,
+    children,
+    onClick,
+    className,
+}: NavigationLinkProps) {
     return (
-        <Link
-            href={item.href}
-            onClick={onClick}
-            className={className}
-        >
+        <Link href={item.href} onClick={onClick} className={className}>
             {children}
         </Link>
     );
