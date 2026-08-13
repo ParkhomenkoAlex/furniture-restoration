@@ -1,16 +1,18 @@
 import { HeroSection } from "./(landing)/HeroSection";
-import { Services } from "./(landing)/Services";
+import { ServicesSection } from "./(landing)/ServicesSection";
 import { HowItWorksSection } from "@/app/(landing)/HowItWorksSection";
 import { AboutSection } from "@/app/(landing)/AboutSection";
+import { CallToActionSection } from "@/app/(landing)/CallToActionSection";
 
 export default function HomePage() {
     return (
         <>
             <main>
                 <HeroSection />
-                <Services />
+                <ServicesSection />
                 <HowItWorksSection />
                 <AboutSection />
+                <CallToActionSection />
             </main>
         </>
     );

@@ -7,7 +7,7 @@ import type { Service } from "@/app/types/Service";
 import { ServiceCard } from "./ServiceCard";
 import { ServiceModal } from "../components/modals/ServiceModal";
 
-export function Services() {
+export function ServicesSection() {
     const [selectedService, setSelectedService] = useState<Service | null>(
         null,
     );
@@ -49,7 +49,7 @@ export function Services() {
                         </p>
                     </div>
 
-                    {/* Services grid */}
+                    {/* ServicesSection grid */}
                     <div className="mt-16 grid grid-cols-1 lg:mt-24 lg:grid-cols-2">
                         {services.map((service) => (
                             <ServiceCard
