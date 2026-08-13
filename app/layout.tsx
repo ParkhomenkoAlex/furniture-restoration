@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 
 import "./globals.css";
 import { ScrollToTop } from "@/app/components/navigation/ScrollToTop";
+import { Footer } from "@/app/components/Footer";
 
 const geist = Geist({
     variable: "--font-geist",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 <ScrollToTop />
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );
