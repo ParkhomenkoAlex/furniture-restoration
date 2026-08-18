@@ -1,11 +1,10 @@
 import { notFound } from "next/navigation";
 
-import { projects } from "../data/projects";
-
 import PortfolioBeforeAfter from "../components/PortfolioBeforeAfter";
 import PortfolioDetails from "../components/PortfolioDetails";
 import PortfolioGallery from "../components/PortfolioGallery";
-import PortfolioHeader from "../components/PortfolioHeader";
+import PortfolioHero from "../components/PortfolioHero";
+import { projects } from "../data/projects";
 
 type ProjectPageProps = {
     params: Promise<{
@@ -24,9 +23,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
     return (
         <main>
-            <PortfolioHeader project={project} />
+            {/* Image + project header + story */}
+            <PortfolioHero project={project} />
+
+            {/* Materials + restoration */}
             <PortfolioDetails project={project} />
+
+            {/* Before / After */}
             <PortfolioBeforeAfter project={project} />
+
+            {/* Gallery */}
             <PortfolioGallery project={project} />
         </main>
     );

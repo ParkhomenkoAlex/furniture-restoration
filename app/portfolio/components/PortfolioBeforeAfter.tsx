@@ -21,7 +21,6 @@ export default function PortfolioBeforeAfter({
                 </p>
 
                 <div className="grid gap-8 md:grid-cols-2">
-                    {/* Before */}
                     <div>
                         <div className="overflow-hidden bg-surface">
                             <Image
@@ -38,7 +37,6 @@ export default function PortfolioBeforeAfter({
                         </p>
                     </div>
 
-                    {/* After */}
                     <div>
                         <div className="overflow-hidden bg-surface">
                             <Image
