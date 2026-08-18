@@ -192,4 +192,254 @@ export const projects: Project[] = [
                 "The timber was finished with a natural oil to provide protection while keeping the original mid-century appearance.",
         },
     },
+
+    {
+        slug: "walnut-chest",
+        title: "Walnut Chest",
+        category: "Cabinet Restoration",
+
+        shortDescription:
+            "A traditional walnut chest restored with care, revealing the depth and character hidden beneath years of worn finish.",
+
+        longDescription:
+            "This walnut chest had spent decades in the same bedroom, quietly accumulating the signs of everyday use. The drawers had become difficult to open, the original finish had darkened unevenly and several areas of veneer had lifted from the surface. The restoration focused on bringing back the clarity of the walnut without removing the character that came with age. Each drawer was repaired and adjusted by hand, loose veneer was carefully secured, and the original surface was cleaned before receiving a new protective finish. The result is a piece that feels both familiar and renewed, with the warmth of the walnut once again at the centre of its appearance.",
+
+        image: "/images/4.jpg",
+        year: 2025,
+        location: "London, UK",
+
+        images: [
+            {
+                src: "/images/4.jpg",
+                alt: "Restored walnut chest",
+            },
+            {
+                src: "/images/4-2.jpg",
+                alt: "Walnut chest drawer detail",
+            },
+            {
+                src: "/images/4-3.jpg",
+                alt: "Detail of the restored walnut surface",
+            },
+        ],
+
+        beforeAfter: {
+            before: "/images/4-before.jpg",
+            after: "/images/4.jpg",
+        },
+
+        materials: ["Walnut", "Wood veneer", "Natural oil", "Furniture wax"],
+
+        restoration: {
+            structuralRepair:
+                "The drawers and internal structure were repaired and adjusted to restore smooth and reliable movement.",
+
+            woodwork:
+                "Loose veneer was carefully secured and damaged areas of the walnut surface were repaired by hand.",
+
+            finishing:
+                "The original finish was cleaned back and replaced with a subtle protective finish that enhances the walnut grain.",
+        },
+    },
+
+    {
+        slug: "writing-desk",
+        title: "Writing Desk",
+        category: "Desk Restoration",
+
+        shortDescription:
+            "A compact writing desk restored for everyday use while preserving the quiet character of its original craftsmanship.",
+
+        longDescription:
+            "This writing desk had spent years tucked away in a corner of the house. Its surface was marked by countless years of writing, the legs had become slightly unstable and the finish had lost much of its original depth. Rather than completely refinishing the desk, we chose to preserve some of the marks that reflected its history. The joints were carefully repaired, the surface was cleaned and lightly restored, and the timber was finished with natural oil. Small imperfections were deliberately left visible, keeping the desk connected to the years it had already lived through.",
+
+        image: "/images/5.jpg",
+        year: 2025,
+        location: "London, UK",
+
+        images: [
+            {
+                src: "/images/5.jpg",
+                alt: "Restored writing desk",
+            },
+            {
+                src: "/images/5-2.jpg",
+                alt: "Writing desk surface detail",
+            },
+            {
+                src: "/images/5-3.jpg",
+                alt: "Detail of the restored desk",
+            },
+        ],
+
+        beforeAfter: {
+            before: "/images/5-before.jpg",
+            after: "/images/5.jpg",
+        },
+
+        materials: ["Oak", "Natural oil", "Furniture wax"],
+
+        restoration: {
+            structuralRepair:
+                "The original joints were repaired and the legs were stabilised while preserving the desk's original construction.",
+
+            woodwork:
+                "The desktop was carefully cleaned and lightly restored, retaining small marks from years of use.",
+
+            finishing:
+                "Natural oil and wax were applied to protect the timber and restore its warmth.",
+        },
+    },
+
+    {
+        slug: "painted-wardrobe",
+        title: "Painted Wardrobe",
+        category: "Cabinet Restoration",
+
+        shortDescription:
+            "A tired painted wardrobe carefully restored while retaining the layers and imperfections that gave it its character.",
+
+        longDescription:
+            "This old wardrobe had accumulated several layers of paint over the years, each one reflecting a different period in the life of the house. The doors no longer closed properly and the surface had become heavily worn around the handles and edges. Instead of stripping the wardrobe completely, the restoration focused on stabilising the structure and carefully repairing the most damaged areas. The existing layers were cleaned and softened, allowing traces of the earlier finishes to remain visible. The result preserves the character of the wardrobe while making it practical and reliable for everyday use once again.",
+
+        image: "/images/6.jpg",
+        year: 2024,
+        location: "London, UK",
+
+        images: [
+            {
+                src: "/images/6.jpg",
+                alt: "Restored painted wardrobe",
+            },
+            {
+                src: "/images/6-2.jpg",
+                alt: "Painted wardrobe door detail",
+            },
+            {
+                src: "/images/6-3.jpg",
+                alt: "Detail of the restored wardrobe",
+            },
+        ],
+
+        beforeAfter: {
+            before: "/images/6-before.jpg",
+            after: "/images/6.jpg",
+        },
+
+        materials: ["Painted timber", "Natural wax", "Brass hardware"],
+
+        restoration: {
+            structuralRepair:
+                "The wardrobe doors and internal structure were repaired and adjusted to restore proper alignment.",
+
+            woodwork:
+                "Damaged timber around the doors and frame was repaired while preserving the existing layers of paint.",
+
+            finishing:
+                "The restored surface was protected with a subtle wax finish that keeps the aged appearance intact.",
+        },
+    },
+
+    {
+        slug: "oak-coffee-table",
+        title: "Oak Coffee Table",
+        category: "Table Restoration",
+
+        shortDescription:
+            "A heavily used oak coffee table restored with a lighter touch, keeping the marks that made it part of the home.",
+
+        longDescription:
+            "This oak coffee table had become the centre of a busy living room. Its surface showed years of cups, books, scratches and everyday use, while one of the joints had started to loosen. The restoration was intentionally restrained. The structure was repaired first, followed by a careful cleaning of the tabletop and a light restoration of the finish. Rather than removing every imperfection, the surface was left with subtle traces of its previous life. A natural oil and wax finish brought back the warmth of the oak and gave the table the protection it needed for many more years of use.",
+
+        image: "/images/7.jpg",
+        year: 2024,
+        location: "London, UK",
+
+        images: [
+            {
+                src: "/images/7.jpg",
+                alt: "Restored oak coffee table",
+            },
+            {
+                src: "/images/7-2.jpg",
+                alt: "Oak coffee table surface detail",
+            },
+            {
+                src: "/images/7-3.jpg",
+                alt: "Detail of the restored coffee table",
+            },
+        ],
+
+        beforeAfter: {
+            before: "/images/7-before.jpg",
+            after: "/images/7.jpg",
+        },
+
+        materials: ["Solid oak", "Natural oil", "Oak wax"],
+
+        restoration: {
+            structuralRepair:
+                "The loose joint was repaired and the frame was stabilised without changing the original construction.",
+
+            woodwork:
+                "The tabletop was cleaned and lightly restored to preserve its natural grain and signs of use.",
+
+            finishing:
+                "A natural oil and wax finish was applied to protect the surface and restore the warmth of the oak.",
+        },
+    },
+
+    {
+        slug: "upholstered-lounge-chair",
+        title: "Lounge Chair",
+        category: "Upholstery Restoration",
+
+        shortDescription:
+            "A classic lounge chair given a new lease of life through careful structural repair and traditional upholstery.",
+
+        longDescription:
+            "This lounge chair had all the right proportions but had lost much of its comfort after years of use. The original upholstery had become worn and the frame had developed movement in several joints. The chair was carefully stripped back to reveal the original construction, allowing the frame to be repaired before the upholstery was rebuilt. Traditional techniques were used throughout, with new natural fabric chosen to complement the original form. The finished chair feels familiar rather than transformed — comfortable, strong and ready for everyday use again.",
+
+        image: "/images/8.jpg",
+        year: 2024,
+        location: "London, UK",
+
+        images: [
+            {
+                src: "/images/8.jpg",
+                alt: "Restored upholstered lounge chair",
+            },
+            {
+                src: "/images/8-2.jpg",
+                alt: "Lounge chair upholstery detail",
+            },
+            {
+                src: "/images/8-3.jpg",
+                alt: "Detail of the restored lounge chair",
+            },
+        ],
+
+        beforeAfter: {
+            before: "/images/8-before.jpg",
+            after: "/images/8.jpg",
+        },
+
+        materials: [
+            "Beech frame",
+            "Natural linen",
+            "Wool",
+            "Traditional upholstery",
+        ],
+
+        restoration: {
+            structuralRepair:
+                "The frame was carefully repaired and stabilised, restoring the original strength of the chair.",
+
+            upholstery:
+                "The old upholstery was removed and rebuilt using traditional methods and natural fabrics.",
+
+            finishing:
+                "The exposed timber was cleaned and finished with a subtle natural wax.",
+        },
+    },
 ];
