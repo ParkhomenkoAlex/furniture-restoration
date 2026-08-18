@@ -1,4 +1,4 @@
-import ProjectCard from "./components/ProjectCard";
+import PortfolioCard from "./components/PortfolioCard";
 import { projects } from "./data/projects";
 
 export default function PortfolioPage() {
@@ -26,7 +26,7 @@ export default function PortfolioPage() {
             <section className="px-6 py-20">
                 <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-16 md:grid-cols-2">
                     {projects.map((project) => (
-                        <ProjectCard key={project.slug} project={project} />
+                        <PortfolioCard key={project.slug} project={project} />
                     ))}
                 </div>
             </section>
