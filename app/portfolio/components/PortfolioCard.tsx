@@ -7,7 +7,7 @@ type ProjectCardProps = {
     project: Project;
 };
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function PortfolioCard({ project }: ProjectCardProps) {
     return (
         <Link href={`/portfolio/${project.slug}`} className="group block">
             <div className="overflow-hidden bg-surface">
@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 </p>
 
                 <p className="mt-3 max-w-xl text-sm leading-6 text-muted">
-                    {project.description}
+                    {project.shortDescription}
                 </p>
             </div>
         </Link>
