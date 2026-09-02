@@ -22,7 +22,7 @@ export function ServicesSection() {
                 id="services"
                 className="scroll-mt-20 border-t border-neutral-200 bg-[#f4f2ed]"
             >
-                <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
+                <div className="mx-auto max-w-[1440px] px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
                     {/* Section intro */}
                     <div className="max-w-[720px]">
                         <div className="flex items-center gap-4">
@@ -44,13 +44,13 @@ export function ServicesSection() {
                             piece receives the attention its history deserves.
                         </p>
 
-                        <p className="mt-6 text-xs uppercase tracking-[0.16em] text-neutral-400">
+                        <p className="mt-5 text-xs uppercase tracking-[0.16em] text-neutral-400">
                             Click a service to explore
                         </p>
                     </div>
 
-                    {/* ServicesSection grid */}
-                    <div className="mt-16 grid grid-cols-1 lg:mt-24 lg:grid-cols-2">
+                    {/* Services grid */}
+                    <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:mt-14 lg:grid-cols-3">
                         {services.map((service) => (
                             <ServiceCard
                                 key={service.id}

@@ -4,7 +4,7 @@ import { projects } from "./data/projects";
 export default function PortfolioPage() {
     return (
         <main>
-            <section className="border-b border-border px-6 py-24">
+            <section className="border-b border-border px-6 py-16">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted">
                         Our work
@@ -23,8 +23,8 @@ export default function PortfolioPage() {
                 </div>
             </section>
 
-            <section className="px-6 py-20">
-                <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-16 md:grid-cols-2">
+            <section className="px-6 py-12">
+                <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project) => (
                         <PortfolioCard key={project.slug} project={project} />
                     ))}

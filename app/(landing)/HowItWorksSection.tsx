@@ -8,8 +8,8 @@ export function HowItWorksSection() {
             id="how-it-works"
             className="border-t border-neutral-200 bg-[#f4f2ed]"
         >
-            <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
-                <div className="grid gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
+            <div className="mx-auto max-w-[1440px] px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+                <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
                     {/* Section intro */}
                     <div className="lg:sticky lg:top-24 lg:self-start">
                         <div className="flex items-center gap-4">
@@ -38,9 +38,9 @@ export function HowItWorksSection() {
                         {howItWorksSteps.map((step) => (
                             <div
                                 key={step.number}
-                                className="border-t border-neutral-300 py-8 sm:py-10"
+                                className="border-t border-neutral-300 py-6 sm:py-8"
                             >
-                                <div className="grid gap-8 sm:grid-cols-[1fr_220px] sm:items-center lg:grid-cols-[1fr_280px]">
+                                <div className="grid gap-6 sm:grid-cols-[1fr_220px] sm:items-center lg:grid-cols-[1fr_280px]">
                                     <div>
                                         <div className="flex items-start gap-4">
                                             <span className="shrink-0 text-[10px] font-medium uppercase tracking-[0.2em] text-neutral-400">

@@ -7,8 +7,8 @@ export function AboutSection() {
             id="about"
             className="border-t border-neutral-200 bg-[#f4f2ed]"
         >
-            <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
-                <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+            <div className="mx-auto max-w-[1440px] px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+                <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
                     <div>
                         <div className="flex items-center gap-4">
                             <span className="h-px w-8 bg-neutral-400" />
@@ -51,7 +51,7 @@ export function AboutSection() {
 
                     <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-200">
                         <Image
-                            src="https://images.unsplash.com/photo-1634141737337-50b2d803d6e5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src="https://images.unsplash.com/photo-1634141737337-50b2d803d6e5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1hfHx8fA%3D%3D"
                             alt="Beautifully restored vintage furniture"
                             fill
                             sizes="(max-width: 1024px) 100vw, 55vw"
