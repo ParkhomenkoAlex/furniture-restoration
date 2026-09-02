@@ -20,8 +20,8 @@ export default function AboutItemSection({
         <section
             className={bordered ? "border-y border-neutral-200 bg-white" : ""}
         >
-            <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
-                <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
+            <div className="mx-auto max-w-[1440px] px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+                <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
                     <div>
                         <div className="flex items-center gap-4">
                             <span className="h-px w-8 bg-neutral-400" />
@@ -48,7 +48,7 @@ export default function AboutItemSection({
                         {items.map((item) => (
                             <article
                                 key={item.id}
-                                className="grid gap-6 border-b border-neutral-300 py-8 last:border-b-0 sm:grid-cols-[180px_1fr] sm:gap-10"
+                                className="grid gap-6 border-b border-neutral-300 py-6 last:border-b-0 sm:grid-cols-[180px_1fr] sm:gap-10 sm:py-7"
                             >
                                 <div className="relative aspect-[4/3] overflow-hidden bg-neutral-200">
                                     <Image

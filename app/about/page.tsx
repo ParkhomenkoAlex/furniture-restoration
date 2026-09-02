@@ -12,7 +12,7 @@ export default function AboutPage() {
         <main className="bg-[#f4f2ed] text-neutral-950">
             {/* 01. HeroSection */}
             <section className="border-b border-neutral-200">
-                <div className="mx-auto grid max-w-[1440px] items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 lg:px-12 lg:py-28">
+                <div className="mx-auto grid max-w-[1440px] items-center gap-10 px-5 py-14 sm:px-8 sm:py-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 lg:px-12 lg:py-20">
                     <div>
                         <div className="flex items-center gap-4">
                             <span className="h-px w-8 bg-neutral-400" />
@@ -63,8 +63,8 @@ export default function AboutPage() {
 
             {/* 02. The workshop */}
             <section>
-                <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
-                    <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
+                <div className="mx-auto max-w-[1440px] px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+                    <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
                         <div>
                             <div className="flex items-center gap-4">
                                 <span className="h-px w-8 bg-neutral-400" />
@@ -74,7 +74,7 @@ export default function AboutPage() {
                                 </span>
                             </div>
 
-                            <p className="mt-8 max-w-[320px] text-sm leading-7 text-neutral-500">
+                            <p className="mt-7 max-w-[320px] text-sm leading-7 text-neutral-500">
                                 A small restoration studio built around
                                 traditional craft, thoughtful decisions, and a
                                 genuine respect for old furniture.
@@ -89,7 +89,7 @@ export default function AboutPage() {
                                 </span>
                             </h2>
 
-                            <div className="mt-10 grid gap-8 sm:grid-cols-2">
+                            <div className="mt-8 grid gap-8 sm:grid-cols-2">
                                 <div>
                                     <p className="text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
                                         Our workshop grew from a fascination
@@ -146,8 +146,8 @@ export default function AboutPage() {
 
             {/* 04. Before / After */}
             <section>
-                <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
-                    <div className="mb-14 grid gap-8 lg:grid-cols-[1fr_0.7fr] lg:items-end">
+                <div className="mx-auto max-w-[1440px] px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+                    <div className="mb-10 grid gap-8 lg:grid-cols-[1fr_0.7fr] lg:items-end">
                         <div>
                             <div className="flex items-center gap-4">
                                 <span className="h-px w-8 bg-neutral-400" />
@@ -210,7 +210,7 @@ export default function AboutPage() {
                         </div>
                     </div>
 
-                    <div className="mt-10 grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
+                    <div className="mt-8 grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
                         <div>
                             <span className="text-[10px] uppercase tracking-[0.22em] text-neutral-400">
                                 A closer look
@@ -264,7 +264,7 @@ export default function AboutPage() {
 
             {/* 08. Closing statement */}
             <section>
-                <div className="mx-auto max-w-[1440px] px-5 py-24 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
+                <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
                     <div className="mx-auto max-w-[1000px] text-center">
                         <div className="flex items-center justify-center gap-4">
                             <span className="h-px w-8 bg-neutral-400" />

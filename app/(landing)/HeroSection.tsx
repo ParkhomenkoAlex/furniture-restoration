@@ -79,23 +79,6 @@ export function HeroSection() {
                     </div>
                 </div>
             </div>
-
-            {/* Bottom information */}
-            <div className="mx-auto hidden max-w-[1440px] px-5 pb-8 sm:px-8 lg:block lg:px-12">
-                <div className="flex items-center justify-between border-t border-neutral-200 pt-5">
-                    <span className="text-[10px] uppercase tracking-[0.22em] text-neutral-400">
-                        Est. 2012
-                    </span>
-
-                    <span className="text-[10px] uppercase tracking-[0.22em] text-neutral-400">
-                        Hand restoration · Furniture conservation
-                    </span>
-
-                    <span className="text-[10px] uppercase tracking-[0.22em] text-neutral-400">
-                        Scroll to explore
-                    </span>
-                </div>
-            </div>
         </section>
     );
 }
